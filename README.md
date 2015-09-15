@@ -14,15 +14,20 @@ Setup task scheduler instructions
 - Give the task a name like "Update time zone on network connect" or whatever you choose
 - On the Triggers tab, click New... and select On an Event from the dropdown box.
 - Choose the following settings:
+```
         Log: Microsoft-Windows-NetworkProfile/Operational
         Source: NetworkProfile
         Event ID: 10000
+```
 - Click OK, then go to the Conditions tab.
 - Check the box for Start only if the following network connection is available and choose the network you want to run the script with
 - Under the Actions tab, click New... and select Start a program. Enter the location of the script file you want to run, then click OK.
 - Set any other task settings you want to, then click OK.
  
-Command: powershell -file update_time_zone.ps1
+Command: 
+```
+powershell -file update_time_zone.ps1
+```
 
 Credits
 ------------------
