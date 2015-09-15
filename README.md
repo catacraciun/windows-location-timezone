@@ -5,7 +5,10 @@ This script is designed to run as a scheduled task on Windows. It uses telize.co
 
 Installation
 -------------------
-Change policy to run scripts (from CMD as Admin): powershell -Command "Set-ExecutionPolicy -ExecutionPolicy Unrestricted"
+Change policy to run scripts (from CMD as Admin): 
+```
+powershell -Command "Set-ExecutionPolicy -ExecutionPolicy Unrestricted"
+```
  
 Setup task scheduler instructions
 ---------------------------
